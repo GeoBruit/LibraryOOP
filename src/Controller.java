@@ -370,7 +370,7 @@ public class Controller {
      * method catches and logs the exception to assist with debugging.
      */
     private void editItem() {
-        System.out.println("Enter ID of item you want to edit: :)");
+
         int id = validateId();
 
         BorrowableItem item = inventory.findItemById(id);
@@ -448,7 +448,7 @@ public class Controller {
 
         view.printTypeOptions();
 
-        System.out.println("4 To print all items");
+        System.out.println("4 - To print all items");
         List<BorrowableItem> allItems = inventory.getAllItems();
 
         String option = getUserInput();
